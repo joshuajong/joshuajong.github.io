@@ -2,8 +2,8 @@ import React from 'react';
 
 function NotFound() {
   return (
-    <div className="bg-gray-500 text-white p-4">
-      <p className="mt-2">We're working hard to get this page up for you :)</p>
+    <div className="bg-white-500 text-white p-4">
+      <p className="mt-2"></p>
       <div className="flex justify-center mt-4">
         <img
           src="/images/error.jpg"
