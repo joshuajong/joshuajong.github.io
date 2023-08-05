@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NotFound() {
+function Thoughts() {
   return (
     <div className="bg-white-500 text-white p-4">
       <p className="mt-2"></p>
@@ -16,4 +16,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default Thoughts;

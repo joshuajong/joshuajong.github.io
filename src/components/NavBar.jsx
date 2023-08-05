@@ -8,8 +8,6 @@ function NavBar() {
   const handleClick = (linkName) => {
     setActiveLink(linkName);
   };
-  
-  console.log("Hello from navbar");
 
   return (
     <nav className="border-gray-200 bg-gray-900">
@@ -39,10 +37,22 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <Link to="*" className="block py-2 pl-3 pr-4 text-slate-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:border-b-2 border-blue-500 rounded-none">Thoughts</Link>
+              <Link
+                to="thoughts"
+                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'thoughts' ? 'text-blue-700 border-b-2' : 'text-slate-400'}`}
+                onClick={() => handleClick('thoughts')}
+              >
+              Thoughts
+              </Link>
             </li>
             <li>
-              <Link to="*" className="block py-2 pl-3 pr-4 text-slate-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:border-b-2 border-blue-500 rounded-none">Contact</Link>
+              <Link
+                to="contact"
+                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'contact' ? 'text-blue-700 border-b-2' : 'text-slate-400'}`}
+                onClick={() => handleClick('contact')}
+              >
+              Contact
+              </Link>
             </li>
           </ul>
         </div>
