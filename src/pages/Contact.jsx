@@ -1,17 +1,19 @@
 import React from 'react';
+import ContactCard from '../components/ContactCard';
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 function Contact() {
   return (
-    <div className="bg-white-500 text-white p-4">
-      <p className="mt-2"></p>
-      <div className="flex justify-center mt-4">
-        <img
-          src="/images/error.jpg"
-          alt="Error"
-          className="max-w-screen-md max-h-screen-md"
-        />
+    <div className="min-h-screen flex flex-col items-center bg-gray-900 text-white p-4 ">
+      <div className="mb-24 mt-24">
+        <h1 className="text-2xl md:text-3xl lg:text-8xl">Contact me</h1>
       </div>
-      <a href="https://www.freepik.com/free-vector/404-error-with-landscape-concept-illustration_20602801.htm#query=404%20page&position=12&from_view=keyword&track=ais">Image by storyset</a> on Freepik
+      <div className="flex space-x-12 md:space-x-16 lg:space-x-24">
+        <ContactCard icon={FaEnvelope} userName="joshuajongsh@gmail.com" link="https://www.google.com" />
+        <ContactCard icon={FaGithub} userName="@joshuajong" link="https://github.com/joshuajong" />
+        <ContactCard icon={FaLinkedinIn} userName="LinkedIn" link="https://linkedin.com/in/joshua-shanho-jong" />
+        <ContactCard icon={FaTwitter} userName="@joshuajong_" link="https://twitter.com/joshuajong_" />
+      </div>
     </div>
   );
 }
