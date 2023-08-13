@@ -20,7 +20,7 @@ function NavBar() {
             <li>
             <Link
               to="home"
-              className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'home' ? 'text-blue-700 border-b-2' : 'text-slate-400'}`}
+              className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'home' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
               onClick={() => handleClick('home')}
             >
             Home
@@ -29,7 +29,7 @@ function NavBar() {
             <li>
               <Link
                 to="about"
-                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'about' ? 'text-blue-700 border-b-2' : 'text-slate-400'}`}
+                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'about' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
                 onClick={() => handleClick('about')}
               >
               About
@@ -38,7 +38,7 @@ function NavBar() {
             <li>
               <Link
                 to="thoughts"
-                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'thoughts' ? 'text-blue-700 border-b-2' : 'text-slate-400'}`}
+                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'thoughts' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
                 onClick={() => handleClick('thoughts')}
               >
               Thoughts
@@ -47,7 +47,7 @@ function NavBar() {
             <li>
               <Link
                 to="contact"
-                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'contact' ? 'text-blue-700 border-b-2' : 'text-slate-400'}`}
+                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'contact' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
                 onClick={() => handleClick('contact')}
               >
               Contact

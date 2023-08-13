@@ -4,22 +4,20 @@ import AboutSection from '../components/AboutSection';
 function About() {
   const internContent = [
     {
-      mainText: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia lorem eu scelerisque blandit. Cras tortor metus, vehicula et suscipit in, ultricies in nisl. Nam hendrerit imperdiet ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia lorem eu scelerisque blandit. Cras tortor metus, vehicula et suscipit in, ultricies in nisl. Nam hendrerit imperdiet ornare',
+      jobTitle: 'Software Engineering Intern',
+      description: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia lorem eu scelerisque blandit.', 'Cras tortor metus, vehicula et suscipit in, ultricies in nisl. Nam hendrerit imperdiet ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia lorem eu scelerisque blandit.', 'Cras tortor metus, vehicula et suscipit in, ultricies in nisl. Nam hendrerit imperdiet ornare',
       ],
-      additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      orgInfo: ['Talenox Pte. Ltd.', 'Singapore', 'Nov 2022 to Feb 2022'],
+      orgInfo: ['Talenox Pte. Ltd.', 'Singapore', 'Nov 2022 – Feb 2022'],
       orgLogo: '/images/talenox_logo.png'
     },
     // Add more sections as needed
   ];
   const uniContent = [
     {
-      mainText: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia lorem eu scelerisque blandit. Cras tortor metus, vehicula et suscipit in, ultricies in nisl. Nam hendrerit imperdiet ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia lorem eu scelerisque blandit. Cras tortor metus, vehicula et suscipit in, ultricies in nisl. Nam hendrerit imperdiet ornare',
-      ],
-      additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      orgInfo: ['Talenox Pte. Ltd.', 'Singapore', 'Nov 2022 to Feb 2022'],
+      jobTitle: 'Tutor',
+      description: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit.',],
+      orgInfo: ['Monash University', 'Malaysia', '(Date)'],
       orgLogo: '/images/monash_university_logo.svg'
     },
     // Add more sections as needed
@@ -27,11 +25,11 @@ function About() {
 
   const talenoxContent = [
     {
-      mainText: [
+      jobTitle: 'Software Engineer',
+      description: [
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia lorem eu scelerisque blandit. Cras tortor metus, vehicula et suscipit in, ultricies in nisl. Nam hendrerit imperdiet ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia lorem eu scelerisque blandit. Cras tortor metus, vehicula et suscipit in, ultricies in nisl. Nam hendrerit imperdiet ornare',
       ],
-      additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      orgInfo: ['Talenox Pte. Ltd.', 'Singapore', 'Nov 2022 to Feb 2022'],
+      orgInfo: ['Talenox Pte. Ltd.', 'Singapore', 'Mar 2022 – present'],
       orgLogo: '/images/talenox_logo.png'
     },
     // Add more sections as needed
@@ -39,18 +37,22 @@ function About() {
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-white text-slate-900 p-4">
-      <h1 className="text-1xl md:text-1xl lg:text-4xl font-bold mb-12">my journey</h1>
+      <div className="mb-16">
+        <h1 className="text-2xl md:text-3xl lg:text-6xl">about me</h1>
+      </div>
+      {talenoxContent.map((content, index) => (
+        <div key={index} className="mb-12">
+          <AboutSection content={content} />
+        </div>
+      ))}
+
       {internContent.map((content, index) => (
         <div key={index} className="mb-8">
           <AboutSection content={content} />
         </div>
       ))}
+
       {uniContent.map((content, index) => (
-        <div key={index} className="mb-8">
-          <AboutSection content={content} />
-        </div>
-      ))}
-      {talenoxContent.map((content, index) => (
         <div key={index} className="mb-8">
           <AboutSection content={content} />
         </div>
