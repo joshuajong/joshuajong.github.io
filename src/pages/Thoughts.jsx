@@ -1,19 +1,25 @@
 import React from 'react';
+import Post from '../components/Post.jsx';
 
 function Thoughts() {
   return (
-    <div className="bg-white-500 text-white p-4">
-      <p className="mt-2"></p>
-      <div className="flex justify-center mt-4">
-        <img
-          src="/images/error.jpg"
-          alt="Error"
-          className="max-w-screen-md max-h-screen-md"
-        />
+    <div className="min-h-screen flex flex-col items-center bg-white text-slate-400 p-4">
+      <div className="mb-24 mt-12">
+        <h1 className="text-2xl md:text-3xl lg:text-6xl">thoughts</h1>
       </div>
-      <a href="https://www.freepik.com/free-vector/404-error-with-landscape-concept-illustration_20602801.htm#query=404%20page&position=12&from_view=keyword&track=ais">Image by storyset</a> on Freepik
+      <div className="w-2/3 mx-auto grid grid-cols-2 gap-4 md:gap-6 lg:gap-8 justify-left">
+        <Post title="Hello" />
+        <Post title="Hello" />
+        <Post title="Hello" />
+        <Post title="Hello" />
+        <Post title="Hello" />
+        <Post title="Hello" />
+        <Post title="Hello" />
+        <Post title="Hello" />
+      </div>
     </div>
   );
 }
+
 
 export default Thoughts;

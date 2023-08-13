@@ -10,14 +10,13 @@ function NavBar() {
   };
 
   return (
-    <nav className="bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-4 bg-gray-900">
+    <nav className="bg-white">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-4 bg-white">
         <Link to="/home" className="flex">
             <img src="/images/error.jpg" className="h-8 mr-3" alt="Me :)" />
-            <span className="self-center text-2xl font-semibold text-slate-400">joshua jong</span>
         </Link>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-8 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-gray-800 md:bg-gray-900 border-gray-700">
+          <ul className="font-medium flex flex-col p-4 md:p-8 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-gray-800 md:bg-white border-gray-700">
             <li>
             <Link
               to="home"

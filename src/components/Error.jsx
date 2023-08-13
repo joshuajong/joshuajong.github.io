@@ -2,10 +2,9 @@ import React from 'react';
 
 function Error() {
   return (
-    <div className="bg-white-500 text-white p-4">
-      <p className="mt-2"></p>
-      <div className="flex justify-center mt-4 text-blue-500">
-        <h1>This page does not exist :(</h1>
+    <div className="min-h-screen flex flex-col items-center bg-white text-slate-400">
+      <div className="m-56">
+        <h1 className="text-2xl md:text-2xl lg:text-6xl">the page you're looking for doesn't exist yet :(</h1>
       </div>
     </div>
   );

@@ -4,9 +4,9 @@ import { FaEnvelope, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 function Contact() {
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gray-900 text-white p-4 ">
+    <div className="min-h-screen flex flex-col items-center bg-white text-slate-900 p-4">
       <div className="mb-24 mt-24">
-        <h1 className="text-2xl md:text-3xl lg:text-8xl">Contact me</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-6xl">contact me</h1>
       </div>
       <div className="flex space-x-12 md:space-x-16 lg:space-x-24">
         <ContactCard icon={FaEnvelope} userName="joshuajongsh@gmail.com" link="https://www.google.com" />

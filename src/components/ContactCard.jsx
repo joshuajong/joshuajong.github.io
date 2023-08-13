@@ -18,10 +18,10 @@ function ContactCard( { icon: Icon, userName, link } ) {
   }
 
   return (
-    <div className="hover:relative hover:opacity-100 hover:scale-150 opacity-50 bg-gray-800 text-white p-8 h-48 w-60 flex items-center justify-center">
+    <div className="hover:relative hover:opacity-100 hover:scale-150 opacity-50 text-slate-900 p-8 h-48 w-60 flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
         <Icon size="24" className="mb-2" />
-        <a className="text-white-500" {...linkProps}>{userName}</a>
+        <a className="text-slate-400-500" {...linkProps}>{userName}</a>
       </div>
     </div>
   );

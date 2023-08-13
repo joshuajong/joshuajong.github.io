@@ -6,6 +6,7 @@ import Navbar from './components/NavBar';
 import About from './pages/About';
 import Thoughts from './pages/Thoughts';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 function AppRoutes() {
   return (
@@ -20,6 +21,8 @@ function AppRoutes() {
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+
+      <Footer />
     </>
   );
 }
