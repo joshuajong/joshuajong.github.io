@@ -7,6 +7,7 @@ import About from './pages/About';
 import Thoughts from './pages/Thoughts';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import InvestmentCalculator from './pages/InvestmentCalculator';
 
 function AppRoutes() {
   return (
@@ -19,6 +20,7 @@ function AppRoutes() {
         <Route path="about" element={<About />} />
         <Route path="thoughts" element={<Thoughts />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="investment_calculator" element={<InvestmentCalculator />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
