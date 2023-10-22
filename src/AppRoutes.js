@@ -20,7 +20,7 @@ function AppRoutes() {
         <Route path="about" element={<About />} />
         <Route path="thoughts" element={<Thoughts />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="investment_calculator" element={<InvestmentCalculator />} />
+        {/* <Route path="investment_calculator" element={<InvestmentCalculator />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
 

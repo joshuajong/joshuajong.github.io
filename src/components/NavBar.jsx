@@ -36,13 +36,14 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <Link
+              <a href="https://joshuajong4.wordpress.com" target="_blank">Thoughts</a>
+              {/* <Link
                 to="thoughts"
                 className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'thoughts' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
                 onClick={() => handleClick('thoughts')}
               >
                 Thoughts
-              </Link>
+              </Link> */}
             </li>
             <li>
               <Link
@@ -53,7 +54,7 @@ function NavBar() {
                 Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="investment_calculator"
                 className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'contact' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
@@ -61,7 +62,7 @@ function NavBar() {
               >
                 Calculator
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
