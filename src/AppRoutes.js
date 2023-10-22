@@ -21,7 +21,7 @@ function AppRoutes() {
         <Route path="thoughts" element={<Thoughts />} />
         <Route path="contact" element={<Contact />} />
         {/* <Route path="investment_calculator" element={<InvestmentCalculator />} /> */}
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} /> 
       </Routes>
 
       <Footer />
