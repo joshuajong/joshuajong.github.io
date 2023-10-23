@@ -7,7 +7,7 @@ import About from './pages/About';
 import Thoughts from './pages/Thoughts';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import InvestmentCalculator from './pages/InvestmentCalculator';
+// import InvestmentCalculator from './pages/InvestmentCalculator';
 
 function AppRoutes() {
   return (
