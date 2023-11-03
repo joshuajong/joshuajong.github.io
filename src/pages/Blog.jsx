@@ -9,12 +9,14 @@ function Blog() {
         <h1 className="text-2xl md:text-3xl lg:text-6xl">blog</h1>
       </div>
       <div className="flex space-x-12 md:space-x-16 lg:space-x-24">
-        <Category icon={FaPlane} categoryName="travel" to="/travel" />
-        <Category icon={FaPhone} categoryName="tech" to="/tech" />
-        <Category icon={FaPlane} categoryName="thoughts" to="/thoughts" />
+        <Category icon={FaPlane} categoryName="travel" route="/blog/travel" />
+        <Category icon={FaPhone} categoryName="tech" route="/blog/tech" />
+        <Category icon={FaPlane} categoryName="thoughts" route="/blog/thoughts" />
       </div>
     </div>
   );
 }
+
+
 
 export default Blog;

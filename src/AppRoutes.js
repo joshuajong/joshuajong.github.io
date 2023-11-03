@@ -24,11 +24,10 @@ function AppRoutes() {
         <Route path='/' element={<Main />} /> 
         <Route path="home" element={<Main />} />
         <Route path="about" element={<About />} />
-        <Route path="blog" element={<Blog />}>
-          <Route path="thoughts" element={<ThoughtsPage />} />
-          <Route path="travel" element={<TravelPage />} />
-          <Route path="tech" element={<TechPage />} />
-        </Route>
+        <Route path="blog" element={<Blog />}> / </Route>
+        <Route path="/blog/thoughts" element={<ThoughtsPage />} />
+        <Route path="/blog/travel" element={<TravelPage />} />
+        <Route path="/blog/tech" element={<TechPage />} />
         <Route path="contact" element={<Contact />} />
         {/* <Route path="investment_calculator" element={<InvestmentCalculator />} /> */}
         <Route path="*" element={<NotFound />} /> 
