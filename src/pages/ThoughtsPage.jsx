@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Post from '../components/Post.jsx';
 
-function Thoughts() {
+function ThoughtsPage() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -37,4 +37,4 @@ function Thoughts() {
   );
 }
 
-export default Thoughts;
+export default ThoughtsPage;
