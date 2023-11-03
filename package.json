@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "bash deployment.sh"
+    "deploy": "gh-pages -b deploy -d build"
   },
   "eslintConfig": {
     "extends": [
