@@ -12,7 +12,24 @@ function stripHTMLTags(html) {
   return titleWithoutHtmlEntities;
 }
 
+function formatDate(dateString) {
+  const options = {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+    timeZoneName: "short",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "GMT"
+  };
+  const date = new Date(dateString);
+  return date.toLocaleString("en-US", options);
+}
+
 function Post({ post }) {
+  const formattedDate = formatDate(post.datePosted);
+
   return (
     <div className="post hover:relative text-black-500">
       <div className="flex flex-col justify-center ml-32 mr-32">
@@ -21,10 +38,8 @@ function Post({ post }) {
             {stripHTMLTags(post.title)}
           </h1>
         </a>
-        <div className="italic mb-2"
-         dangerouslySetInnerHTML={{ __html: post.preview }}
-        />
-        <h1 className="italic text-slate-400 mb-2">{ post.datePosted }</h1>
+        <div className="italic mb-2" dangerouslySetInnerHTML={{ __html: post.preview }} />
+        <h1 className="italic text-slate-400 mb-2">{formattedDate}</h1>
       </div>
     </div>
   );
