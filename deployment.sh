@@ -6,8 +6,12 @@ npm run build
 # Switch to the deployment branch
 git checkout deploy
 
-# Copy the "build" directory from the main branch
-git checkout main -- build
+# Remove all existing files in the deployment branch
+git rm -rf .
+
+# Copy the contents of the "build" directory from the main branch to the root of deploy
+git checkout main -- build/*
+git checkout main -- build/.*
 
 # Commit and push the changes
 git add .
