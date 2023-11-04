@@ -37,11 +37,11 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to="thoughts"
-                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'thoughts' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
-                onClick={() => handleClick('thoughts')}
+                to="blog"
+                className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'blog' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
+                onClick={() => handleClick('blog')}
               >
-                Thoughts
+                Blog
               </Link>
             </li>
             <li>
