@@ -15,6 +15,9 @@ function ThoughtsPage() {
           link: post.link,
           preview: post.excerpt.rendered,
           writtenBy: post.author.name,
+          id: post.id,
+          slug: post.slug,
+          category: "thoughts"
         })));
       })
       .catch((error) => {

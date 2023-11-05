@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import ThoughtsPage from './pages/ThoughtsPage';
 import TravelPage from './pages/TravelPage';
 import TechPage from './pages/TechPage';
+import Post from './components/Post';
 import Footer from './components/Footer';
 // import InvestmentCalculator from './pages/InvestmentCalculator';
 
@@ -27,6 +28,8 @@ function AppRoutes() {
         <Route path="blog" element={<Blog />}> / </Route>
         <Route path="/blog/thoughts" element={<ThoughtsPage />} />
         <Route path="/blog/travel" element={<TravelPage />} />
+        <Route path="/blog/thoughts/:postSlug" element={<Post />} />
+        <Route path="/blog/travel/:postSlug" element={<Post />} />
         <Route path="/blog/tech" element={<TechPage />} />
         <Route path="contact" element={<Contact />} />
         {/* <Route path="investment_calculator" element={<InvestmentCalculator />} /> */}

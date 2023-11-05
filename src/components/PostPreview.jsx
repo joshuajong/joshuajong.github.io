@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function stripHTMLTags(html) {
   // Create a temporary element to parse the HTML
@@ -31,16 +32,14 @@ function PostPreview({ postDetails }) {
   const formattedDate = formatDate(postDetails.datePosted);
 
   return (
-    <div className="post hover:relative text-black-500">
-      <div className="flex flex-col justify-center ml-32 mr-32">
-        <a href={postDetails.link} target="_blank" rel="noopener noreferrer">
-          <h1 className="font-bold text-base md:text-xl lg:text-2xl hover:underline mb-2">
-            {stripHTMLTags(postDetails.title)}
-          </h1>
-        </a>
-        <div className="italic mb-2" dangerouslySetInnerHTML={{ __html: postDetails.preview }} />
-        <h1 className="italic text-slate-400 mb-2">{formattedDate}</h1>
-      </div>
+    <div className="flex flex-col justify-center ml-32 mr-32">
+      <Link to={`/blog/${postDetails.category}/${postDetails.slug}`}>
+        <h1 className="font-bold text-base md:text-xl lg:text-2xl hover:underline mb-2">
+          {stripHTMLTags(postDetails.title)}
+        </h1>
+      </Link>
+      <div className="italic mb-2" dangerouslySetInnerHTML={{ __html: postDetails.preview }} />
+      <h1 className="italic text-slate-400 mb-2">{formattedDate}</h1>
     </div>
   );
 }

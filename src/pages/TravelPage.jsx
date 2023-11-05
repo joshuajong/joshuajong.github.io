@@ -15,6 +15,9 @@ function TravelPage() {
           link: post.link,
           preview: post.excerpt.rendered,
           writtenBy: post.author.name,
+          id: post.id,
+          slug: post.slug,
+          category: "travel"
           // You may need to extract the post ID here if you want to link to individual posts.
         })));
       })
