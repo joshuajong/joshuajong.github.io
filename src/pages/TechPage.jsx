@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Post from '../components/Post.jsx';
+import Post from '../components/PostPreview.jsx';
 
 function TechPage() {
   const [posts, setPosts] = useState([]);

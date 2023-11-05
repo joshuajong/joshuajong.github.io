@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Post from '../components/Post.jsx';
+import PostPreview from '../components/PostPreview.jsx';
 
 function TravelPage() {
   const [posts, setPosts] = useState([]);
@@ -30,7 +30,7 @@ function TravelPage() {
       </div>
       <div className="grid grid-cols-2 gap-8 md:gap-12 lg:gap-16">
         {posts.map((post, index) => (
-          <Post key={index} post={post} />
+          <PostPreview key={index} postDetails={post} />
         ))}
       </div>
     </div>

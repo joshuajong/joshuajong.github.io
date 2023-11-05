@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Post from '../components/Post.jsx';
+import PostPreview from '../components/PostPreview.jsx';
 
 function ThoughtsPage() {
   const [posts, setPosts] = useState([]);
@@ -15,7 +15,6 @@ function ThoughtsPage() {
           link: post.link,
           preview: post.excerpt.rendered,
           writtenBy: post.author.name,
-          // You may need to extract the post ID here if you want to link to individual posts.
         })));
       })
       .catch((error) => {
@@ -30,7 +29,7 @@ function ThoughtsPage() {
       </div>
       <div className="grid grid-cols-2 gap-8 md:gap-12 lg:gap-16">
         {posts.map((post, index) => (
-          <Post key={index} post={post} />
+          <PostPreview key={index} postDetails={post} />
         ))}
       </div>
     </div>
