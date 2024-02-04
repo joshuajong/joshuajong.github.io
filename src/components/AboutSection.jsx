@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutSection({ content }) {
   return (
-    <div className="mx-auto grid grid-cols-3 w-2/3">
+    <div className="mx-auto grid grid-cols-3 w-2/3 text-lg">
       <div className="col-span-1 border-r border-red-500 p-4">
         <img src={ content.orgLogo } alt="Logo"></img>
         <div className="mt-12 text-right">
