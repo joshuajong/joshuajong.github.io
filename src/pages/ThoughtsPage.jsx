@@ -6,7 +6,7 @@ function ThoughtsPage() {
 
   useEffect(() => {
     // Fetch posts from WordPress using the WordPress.com REST API
-    fetch('https://public-api.wordpress.com/wp/v2/sites/joshuajong4.wordpress.com/posts')
+    fetch('https://public-api.wordpress.com/wp/v2/sites/joshuajong4.wordpress.com/posts?categories=563')
       .then((response) => response.json())
       .then((data) => {
         setPosts(data.map((post) => ({

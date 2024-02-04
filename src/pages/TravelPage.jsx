@@ -6,7 +6,7 @@ function TravelPage() {
 
   useEffect(() => {
     // Fetch posts from WordPress using the WordPress.com REST API
-    fetch('https://public-api.wordpress.com/wp/v2/sites/joshuajong4.wordpress.com/posts')
+    fetch('https://public-api.wordpress.com/wp/v2/sites/joshuajong4.wordpress.com/posts?categories=5863')
       .then((response) => response.json())
       .then((data) => {
         setPosts(data.map((post) => ({
@@ -26,7 +26,7 @@ function TravelPage() {
   return (
     <div className="min-h-screen flex flex-col items-center bg-white text-slate-900 p-4">
       <div className="mb-16">
-        <h1 className="text-2xl md:text-3xl lg:text-6xl">thoughts</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-6xl">travel</h1>
       </div>
       <div className="grid grid-cols-2 gap-8 md:gap-12 lg:gap-16">
         {posts.map((post, index) => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import Category from '../components/Category';
-import { FaPlane, FaPhone } from 'react-icons/fa';
+import { FaPlane, FaWifi } from 'react-icons/fa';
 
 function Blog() {
   return (
@@ -10,7 +10,7 @@ function Blog() {
       </div>
       <div className="flex space-x-12 md:space-x-16 lg:space-x-24">
         <Category icon={FaPlane} categoryName="travel" route="/blog/travel" />
-        <Category icon={FaPhone} categoryName="tech" route="/blog/tech" />
+        <Category icon={FaWifi} categoryName="tech" route="/blog/tech" />
         <Category icon={FaPlane} categoryName="thoughts" route="/blog/thoughts" />
       </div>
     </div>
