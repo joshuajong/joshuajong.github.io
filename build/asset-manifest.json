@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/joshuajong.github.io/static/css/main.8747ad42.css",
+    "main.js": "/joshuajong.github.io/static/js/main.3ba6c47d.js",
+    "static/js/787.8a7c67b4.chunk.js": "/joshuajong.github.io/static/js/787.8a7c67b4.chunk.js",
+    "index.html": "/joshuajong.github.io/index.html",
+    "main.8747ad42.css.map": "/joshuajong.github.io/static/css/main.8747ad42.css.map",
+    "main.3ba6c47d.js.map": "/joshuajong.github.io/static/js/main.3ba6c47d.js.map",
+    "787.8a7c67b4.chunk.js.map": "/joshuajong.github.io/static/js/787.8a7c67b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8747ad42.css",
+    "static/js/main.3ba6c47d.js"
+  ]
+}
